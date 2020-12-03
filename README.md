@@ -1,14 +1,14 @@
 # aniagaska.github.io
 
-#Ania Gaska
+# Ania Gaska
 
-##Anna "Ania" Stypulkowski
+## Anna "Ania" Stypulkowski
 
-###Hello!
+### Hello!
 
 I'm a volunteer with Astoria Digital, I'm a UX designer working on researching projects, creating style guidelines and pattern libraries, making site maps, wireframes and style tiles for projects. 
 
-###Contact
+### Contact
 
 [Website](http://www.aniastypul.com)
 [email](mailto:ania@astoria.digital)
