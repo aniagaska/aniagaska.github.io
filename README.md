@@ -6,5 +6,5 @@ I'm a volunteer with Astoria Digital, I'm a UX designer working on researching p
 
 ### Contact
 
-[Website](http://www.aniastypul.com)
-[email](mailto:ania@astoria.digital)
+- [Website](http://www.aniastypul.com)
+- [Email](mailto:ania@astoria.digital)
