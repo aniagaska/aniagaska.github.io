@@ -1,0 +1,179 @@
+body {
+    margin: 3em;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #A8D2E0;
+}
+
+article, aside, figcaption, figure, footer, header, nav, section {
+    display: block;
+}
+
+/* PARAGRAPHS */
+
+h1, h2, h3, h4 {
+    margin: 1em 0 .5em;
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-top: 2em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+ul, ol {
+    margin: 1em 0;
+    padding: 1em;
+    list-style-type: none;
+}
+
+p {
+    margin: 1em 0;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+figure {
+    margin: 1em 0;
+}
+
+/* LINKS */
+
+a {
+    text-decoration: underline;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+    font-weight: 300;
+}
+
+a:active {
+    color: black;
+    font-weight: 500;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+a:active, a:hover {
+    outline: none;
+}
+
+a img {
+    border: none;
+}
+
+/* LAYOUT */
+
+main {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+div {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+div p {
+    max-width: 100%;
+}
+
+main {
+    padding: 1em;
+}
+
+header {
+    margin: 0 auto;
+    padding-bottom: 2em;
+    border-bottom: .5em solid #F9F7EF;
+}
+
+footer {
+    margin: 0 auto;
+    padding-top: 2em;
+    border-top: .5em solid #F9F7EF;
+    text-align: right;
+}
+
+.lentil {
+    max-width: 50%;
+    padding-left: 6em;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        font-size: 18px;
+    }
+    
+    .lentil {
+        max-width: 100%;
+        padding-left: 1em;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    html {
+        font-size: 25px;
+    }
+
+    p {
+        max-width: 50%;
+    }
+
+    .cloud-description {
+        max-width: 50%;
+    }
+
+    div p {
+        max-width: 50%;
+    }
+
+    header {
+        max-width: 75%;
+    }
+
+    footer {
+        max-width: 75%;
+    }
+}
