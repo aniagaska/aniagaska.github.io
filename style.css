@@ -1,3 +1,8 @@
+
+
+
+
+/* Old styling for the clouds page
 body {
     margin: 3em;
     padding: 0;
@@ -12,8 +17,6 @@ body {
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;
 }
-
-/* PARAGRAPHS */
 
 h1, h2, h3, h4 {
     margin: 1em 0 .5em;
@@ -65,8 +68,6 @@ figure {
     margin: 1em 0;
 }
 
-/* LINKS */
-
 a {
     text-decoration: underline;
 }
@@ -98,8 +99,6 @@ a:active, a:hover {
 a img {
     border: none;
 }
-
-/* LAYOUT */
 
 main {
     max-width: 100%;
@@ -177,3 +176,4 @@ footer {
         max-width: 75%;
     }
 }
+*/
