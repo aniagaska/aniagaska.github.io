@@ -1,15 +1,85 @@
 body {
-    font-family: Helvetica, sans-serif;
-    font-size: 18px;   
+    /* font-family: Helvetica, sans-serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: thistle;
 }
 
 main a {
     text-decoration: underline;
+    color: black;
 }
 
+main a:visited {
+    color: black;
+    text-decoration: underline dotted;
+}
 
+main a:hover {
+    background-color: black;
+    color: white;
+    padding: .15em;
+    text-decoration: none;
+}
 
+main a:active {
+    background-color: black;
+    color: white;
+    padding: .15em;
+    text-decoration: none;
+}
 
+main a:focus {
+    outline: .15em solid thistle;
+    background-color: black;
+    color: white;
+    padding: .15em;
+    text-decoration: none;
+}
+
+section {
+    margin: .5rem auto;
+    padding: 1em;
+}
+
+section h1, section h2 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.card {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.text-muted {
+    font-style: italic;
+}
+
+.jumbotron {
+    background-color: black;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: white;
+}
+
+.navbar-text {
+    font-style: italic;
+}
+
+footer {
+    background-color: black;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 1em;
+}
+
+footer small {
+    color: white;
+    padding-left: 1em;
+    font-style: italic;
+}
 
 /* Old styling for the clouds page
 body {
