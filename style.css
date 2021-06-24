@@ -6,7 +6,9 @@ body {
 }
 
 main a {
-    text-decoration: underline;
+    text-decoration: 2px underline solid;
+    /* text-decoration: none; */
+    /* border-bottom: 2px solid; */
     color: black;
 }
 
@@ -30,7 +32,7 @@ main a:active {
 }
 
 main a:focus {
-    outline: .15em solid thistle;
+    outline: .15em solid #d8bfd8;
     background-color: black;
     color: white;
     padding: .15em;
@@ -64,6 +66,14 @@ section h1, section h2 {
     color: white;
 }
 
+.lead {
+    font-size: 1.5rem;
+}
+
+.display-4 {
+    font-style: italic;
+}
+
 .navbar-text {
     font-style: italic;
 }
@@ -79,6 +89,11 @@ footer small {
     color: white;
     padding-left: 1em;
     font-style: italic;
+}
+
+#about p {
+    font-size: 1.25em;
+    /* font-weight: bold; */
 }
 
 /* Old styling for the clouds page
