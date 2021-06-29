@@ -111,13 +111,23 @@ main a:focus {
     text-decoration: none;
 }
 
+
+
 /* Layout */
+
+/* hr{
+    border-bottom: 2px solid black;
+} */
 
 section {
     margin: .5rem auto;
     padding: 1em;
 }
-
+/* 
+#about {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+} */
 section h1, section h2 {
     margin-top: 1rem;
     margin-bottom: 0;
@@ -170,6 +180,12 @@ footer small {
 #about p {
     font-size: 1.25em;
     /* font-weight: bold; */
+}
+
+.highlight {
+    background-color: orange;
+    padding-left: .25em;
+    padding-right: .25em;
 }
 
 /* Old styling for the clouds page
