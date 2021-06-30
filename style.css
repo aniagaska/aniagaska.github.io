@@ -45,12 +45,18 @@ h5 {
     font-size: 1.333rem;
 }
 
+.navbar-brand h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    /* font-style: italic; */
+}
+
 small, .text_small {
     font-size: 0.75rem;
 }
 
 .lead {
-    font-size: 1.777rem;
+    font-size: 2.369rem;
     line-height: 1.15;
 }
 
@@ -73,26 +79,30 @@ ul li {
 
 /* Links */
 
-main a {
+main a,
+footer a {
     /* text-decoration: 2px underline solid; */
     text-decoration: none;
     border-bottom: 2px solid;
     color: black;
 }
 
-main a:visited {
+main a:visited,
+fiiter a:visited {
     color: slategray;
     text-decoration: underline dotted;
 }
 
-main a:hover {
+main a:hover,
+footer a:hover {
     background-color: slategray;
     color: white;
     padding: .15em;
     text-decoration: none;
 }
 
-main a:active {
+main a:active,
+footer a:active {
     background-color: slategray;
     color: white;
     padding: .15em;
@@ -150,10 +160,12 @@ section h1, section h2 {
 
 .jumbotron {
     background-color: slategray;
+    /* background-color: white; */
 }
 
 .jumbotron h1, .jumbotron p {
     color: white;
+    /* color: slategray; */
 }
 
 .seperator {
@@ -175,6 +187,10 @@ footer small {
     color: white;
     padding-left: 1em;
     font-style: italic;
+}
+
+.return-to-top {
+    text-align: right;
 }
 
 #about p {
