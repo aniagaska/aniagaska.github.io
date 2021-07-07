@@ -6,7 +6,7 @@ body {
     /* font-family: Helvetica, sans-serif; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
-    background-color: whitesmoke;
+    background-color: #EDE5D8;
     color: #000000;
     font-weight: 400;
     line-height: 1.25;
@@ -51,6 +51,26 @@ h5 {
     /* font-style: italic; */
 }
 
+/* .navbar-light .navbar-nav .nav-link {
+    color: black;
+} */
+
+.bg-light {
+    background-color: white !important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+
+button:focus {
+    outline: 2px solid black;
+}
+
+.navbar-toggler-icon {
+
+}
+
 small, .text_small {
     font-size: 0.75rem;
 }
@@ -65,9 +85,9 @@ small, .text_small {
     font-size: 4.209rem;
 }
 
-.text-muted {
+/* .text-muted {
     color: slategray;
-}
+} */
 
 .card-subtitle {
     font-size: 1.333rem;
@@ -88,40 +108,63 @@ footer a {
 }
 
 main a:visited,
-fiiter a:visited {
-    color: slategray;
-    text-decoration: underline dotted;
+footer a:visited {
+    /* color: slategray; */
+    text-decoration: none;
+    /* border-bottom: 2px dashed; */
+
 }
 
 main a:hover,
 footer a:hover {
-    background-color: slategray;
-    color: white;
-    padding: .15em;
+    /* background-color: slategray; */
+    color: black;
+    /* padding: .15em; */
     text-decoration: none;
+    border-bottom: none;
 }
 
 main a:active,
 footer a:active {
-    background-color: slategray;
+    background-color: black;
     color: white;
     padding: .15em;
     text-decoration: none;
 }
 
 nav a:focus {
-    outline: .20rem solid orange;
+    outline: .20rem solid black;
 }
 
 main a:focus {
-    outline: .15em solid orange;
-    background-color: slategray;
+    outline: .15em solid black;
+    background-color: black;
     color: white;
     padding: .15em;
     text-decoration: none;
+    border-bottom: 2px solid black;
 }
 
+/* Button */
 
+.button,
+.button:visited {
+    text-decoration: none;
+    border-bottom: none;
+    color: white;
+    background-color: black;
+    padding: .5em;
+}
+
+.button:hover, 
+.button:active,
+.button:focus {
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    background-color: white;
+    padding: .5rem;
+}
 
 /* Layout */
 
@@ -129,25 +172,43 @@ main a:focus {
     border-bottom: 2px solid black;
 } */
 
-section {
-    margin: .5rem auto;
-    padding: 1em;
+article {
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
 }
+
 /* 
 #about {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 } */
-section h1, section h2 {
+
+/* section h1, section h2 {
     margin-top: 1rem;
     margin-bottom: 0;
+} */
+
+@media (min-width: 700px) {
+    .card {
+        min-height: 400px;
+    }
+    p {
+        max-width: 80%;
+    }
+    .card-text {
+        min-width: 100%;
+    }
+  
 }
 
 .card {
     margin-top: .5em;
     margin-bottom: .5em;
-    border: 2px solid slategray;
+    border: 2px solid black;
     border-radius: 0;
+    background-color: white;
 }
 
 .card-body {
@@ -159,13 +220,13 @@ section h1, section h2 {
 }
 
 .jumbotron {
-    background-color: slategray;
-    /* background-color: white; */
+    /* background-color: slategray; */
+    background-color: white;
 }
 
 .jumbotron h1, .jumbotron p {
-    color: white;
-    /* color: slategray; */
+    /* color: white; */
+    color: black;
 }
 
 .seperator {
@@ -177,14 +238,14 @@ section h1, section h2 {
 }
 
 footer {
-    background-color: slategray;
+    /* background-color: white; */
     padding-top: 2em;
     padding-bottom: 2em;
     margin-top: 1em;
 }
 
 footer small {
-    color: white;
+    color: black;
     padding-left: 1em;
     font-style: italic;
 }
@@ -198,11 +259,11 @@ footer small {
     /* font-weight: bold; */
 }
 
-.highlight {
+/* .highlight {
     background-color: orange;
     padding-left: .25em;
     padding-right: .25em;
-}
+} */
 
 /* Old styling for the clouds page
 body {
