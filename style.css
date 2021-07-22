@@ -67,10 +67,6 @@ button:focus {
     outline: 2px solid black;
 }
 
-.navbar-toggler-icon {
-
-}
-
 small, .text_small {
     font-size: 0.75rem;
 }
@@ -84,10 +80,6 @@ small, .text_small {
     font-style: italic;
     font-size: 4.209rem;
 }
-
-/* .text-muted {
-    color: slategray;
-} */
 
 .card-subtitle {
     font-size: 1.333rem;
@@ -192,15 +184,14 @@ article {
 
 @media (min-width: 700px) {
     .card {
-        min-height: 400px;
+        min-height: 520px;
     }
     p {
         max-width: 80%;
     }
     .card-text {
         min-width: 100%;
-    }
-  
+    } 
 }
 
 .card {
