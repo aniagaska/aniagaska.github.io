@@ -355,10 +355,15 @@ html {
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.5;
   font-size: 18px;
-  background-color: #ede5d8;
-  color: #000000;
+  background-color: black;
+  color: white;
   font-weight: 400;
   line-height: 1.25;
 }
@@ -413,37 +418,22 @@ ul li {
 
 /* Links */
 
-main a,
-footer a {
-  text-decoration-thickness: 0.15rem;
-  color: black;
+a,
+a:visited,
+a:hover,
+a:active {
+  color: #c8a47e;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2 em;
 }
 
-main a:visited,
-footer a:visited {
+a:focus {
   text-decoration: none;
-}
-
-main a:hover,
-footer a:hover {
-  color: black;
-  text-decoration: none;
-}
-
-main a:active,
-footer a:active {
-  background-color: black;
-  color: white;
-  padding: 0.15em;
-  text-decoration: none;
-}
-
-main a:focus {
-  outline: 0.15em solid black;
-  background-color: black;
-  color: white;
-  padding: 0.15em;
-  text-decoration-thickness: 0.15rem;
+  outline: 2px solid white;
+  outline-offset: 4px;
 }
 
 /* Button */
