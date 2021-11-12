@@ -1,434 +1,535 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
 html {
-    font-size: 100%;
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+
+/**
+   * Remove the margin in all browsers.
+   */
+
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+
+/**
+   * Add the correct display in IE 10+.
+   */
+
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+
+[hidden] {
+  display: none;
+}
+
+/* Start
+     ========================================================================== */
+
+html {
+  font-size: 100%;
 }
 
 body {
-    /* font-family: Helvetica, sans-serif; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-transform: none;
+  line-height: 1.5;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+@media (min-width: 500px) {
+  body {
     font-size: 18px;
-    background-color: #EDE5D8;
-    color: #000000;
-    font-weight: 400;
-    line-height: 1.25;
+  }
 }
 
 /* Type */
 
 p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
-h1, h2, h3, h4, h5 {
-    /* margin: 3rem 0 1.38rem; */
-    font-weight: 400;
-    line-height: 1.3;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
-h1 {
-    margin-top: 0;
-    font-size: 2.488rem;
+/* h1 {
+  margin-top: 0;
+  font-size: 3.375rem;
+} */
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #c8a47e;
 }
 
-h2 {
-    font-size: 2.074rem;
+/* this is the proper heading scale, but I want to make it consistent with my other site so I'm using their weird choices for now  */
+
+/* h2 {
+  font-size: 2.25rem;
 }
 
 h3 {
-    font-size: 1.728rem;
+  font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 1.44rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 h5 {
-    font-size: 1.2rem;
-}
-
-.navbar-brand {
-    font-size: 1.25rem;
-    margin-bottom: 0;
-    /* font-style: italic; */
-}
-
-/* .navbar-light .navbar-nav .nav-link {
-    color: black;
+  font-size: 1rem;
+  font-weight: 500;
 } */
 
-.bg-light {
-    background-color: white !important;
-}
-
-.navbar-light .navbar-toggler {
-    border-color: white;
-}
-
-button:focus {
-    outline: 2px solid black;
-}
-
-small, .text_small {
-    font-size: 0.75rem;
-}
-
-.lead {
-    font-size: 2.369rem;
-    line-height: 1.15;
-}
-
-.display-4 {
-    font-style: italic;
-    font-size: 4.209rem;
-}
-
-.card-subtitle {
-    font-size: 1.333rem;
+small {
+  font-size: 0.667rem;
 }
 
 ul li {
-    line-height: 1.75;
+  line-height: 1.75;
+}
+
+/* I'm not sure if it's cool for me to do this or if I should make them classes */
+
+h1,
+h2,
+h3 {
+  font-size: 2rem;
+}
+
+footer a {
+  font-size: 1.275rem;
+}
+
+h4 {
+  font-size: 1.544rem;
+  font-weight: 400;
+}
+
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.hello {
+  text-align: center;
+  font-size: 1.544rem;
 }
 
 /* Links */
 
-main a,
-footer a {
-    /* text-decoration: 2px underline solid; */
-    text-decoration: none;
-    border-bottom: 2px solid;
-    color: black;
+a,
+a:visited,
+a:hover,
+a:active {
+  color: #c8a47e;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2 em;
 }
 
-main a:visited,
-footer a:visited {
-    /* color: slategray; */
-    text-decoration: none;
-    /* border-bottom: 2px dashed; */
-
+a:focus {
+  text-decoration: none;
+  outline: 2px solid white;
+  outline-offset: 4px;
 }
 
-main a:hover,
-footer a:hover {
-    /* background-color: slategray; */
-    color: black;
-    /* padding: .15em; */
-    text-decoration: none;
-    border-bottom: none;
+/* List */
+
+ul {
+  color: #c8a47e;
 }
 
-main a:active,
-footer a:active {
-    background-color: black;
-    color: white;
-    padding: .15em;
-    text-decoration: none;
-}
-
-nav a:focus {
-    outline: .20rem solid black;
-}
-
-main a:focus {
-    outline: .15em solid black;
-    background-color: black;
-    color: white;
-    padding: .15em;
-    text-decoration: none;
-    border-bottom: 2px solid black;
-}
-
-/* Button */
-
-.button,
-.button:visited {
-    text-decoration: none;
-    border-bottom: none;
-    color: white;
-    background-color: black;
-    padding: .5em;
-}
-
-.button:hover, 
-.button:active,
-.button:focus {
-    text-decoration: none;
-    border-bottom: none;
-    color: black;
-    background-color: white;
-    padding: .5rem;
+footer ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Layout */
 
-/* hr{
-    border-bottom: 2px solid black;
-} */
-
-article {
-   margin-top: 1rem;
-   margin-bottom: 1rem;
-   padding-top: 1rem;
-   padding-bottom: 1rem;
-}
-
-/* 
-#about {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-} */
-
-/* section h1, section h2 {
-    margin-top: 1rem;
-    margin-bottom: 0;
-} */
-
-@media (min-width: 700px) {
-    .card {
-        min-height: 420px;
-    }
-    p {
-        max-width: 80%;
-    }
-    .card-text {
-        min-width: 100%;
-    } 
-}
-
-.card {
-    margin-top: .5em;
-    margin-bottom: .5em;
-    border: 2px solid black;
-    border-radius: 0;
-    background-color: white;
-}
-
-.card-body {
-    padding: 2rem;
-    line-height: 1.5;
-}
-
-.text-muted {
-    font-style: italic;
-}
-
-.jumbotron {
-    /* background-color: slategray; */
-    background-color: white;
-}
-
-.jumbotron h1, .jumbotron p {
-    /* color: white; */
-    color: black;
-}
-
-.seperator {
-    padding-top: 2em;
-}
-
-.navbar-text {
-    font-style: italic;
-}
-
-footer {
-    /* background-color: white; */
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-top: 1em;
-}
-
-footer small {
-    color: black;
-    padding-left: 1em;
-    font-style: italic;
-}
-
-.return-to-top {
-    text-align: right;
-}
-
-#about p {
-    font-size: 1.25em;
-    /* font-weight: bold; */
-}
-
-/* .highlight {
-    background-color: orange;
-    padding-left: .25em;
-    padding-right: .25em;
-} */
-
-/* Old styling for the clouds page
 body {
-    margin: 3em;
-    padding: 0;
-    font-size: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 1.5;
-    background-color: #A8D2E0;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 2em;
 }
 
-article, aside, figcaption, figure, footer, header, nav, section {
-    display: block;
-}
-
-h1, h2, h3, h4 {
-    margin: 1em 0 .5em;
-    line-height: 1;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-}
-
-h1 {
-    font-size: 2.5em;
-    text-transform: uppercase;
-}
-
-.subtitle {
-    font-size: 1.5em;
-    font-weight: 500;
-    text-decoration: none;
-    line-height: 1;
-}
-
-h2 {
-    font-size: 1.5em;
-    padding-top: 2em;
-}
-
-h3 {
-    font-size: 1.2em;
-}
-
-h4 {
-    font-size: 1em;
-}
-
-ul, ol {
-    margin: 1em 0;
-    padding: 1em;
-    list-style-type: none;
-}
-
-p {
-    margin: 1em 0;
-}
-
-blockquote {
-    margin: 1em 40px;
-}
-
-figure {
-    margin: 1em 0;
-}
-
-a {
-    text-decoration: underline;
-}
-
-a:link {
-    color: black;
-}
-
-a:visited {
-    color: black;
-    font-weight: 300;
-}
-
-a:active {
-    color: black;
-    font-weight: 500;
-}
-
-a:hover, a:focus {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-}
-
-a:active, a:hover {
-    outline: none;
-}
-
-a img {
-    border: none;
-}
-
-main {
-    max-width: 100%;
-}
-
-img {
-    max-width: 100%;
-}
-
-div {
-    max-width: 75%;
-    margin: 0 auto;
-}
-
-div p {
-    max-width: 100%;
-}
-
-main {
-    padding: 1em;
-}
-
-header {
-    margin: 0 auto;
-    padding-bottom: 2em;
-    border-bottom: .5em solid #F9F7EF;
+.hello {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 40em) {
+  body {
+    grid-template-columns: 12em 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+  main {
+    /* padding-left: 6rem; */
     margin: 0 auto;
-    padding-top: 2em;
-    border-top: .5em solid #F9F7EF;
-    text-align: right;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  main p {
+    max-width: 30rem;
+  }
+  .project-item {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr;
+  }
 }
-
-.lentil {
-    max-width: 50%;
-    padding-left: 6em;
-}
-
-@media only screen and (max-width: 600px) {
-    
-    body {
-        font-size: 18px;
-    }
-    
-    .lentil {
-        max-width: 100%;
-        padding-left: 1em;
-    }
-}
-
-@media only screen and (min-width:1000px) {
-    html {
-        font-size: 25px;
-    }
-
-    p {
-        max-width: 50%;
-    }
-
-    .cloud-description {
-        max-width: 50%;
-    }
-
-    div p {
-        max-width: 50%;
-    }
-
-    header {
-        max-width: 75%;
-    }
-
-    footer {
-        max-width: 75%;
-    }
-}
-*/
