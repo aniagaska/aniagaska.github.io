@@ -350,6 +350,9 @@ template {
   display: none;
 }
 
+/* Start
+     ========================================================================== */
+
 html {
   font-size: 100%;
 }
@@ -389,10 +392,10 @@ h5 {
   line-height: 1.5em;
 }
 
-h1 {
+/* h1 {
   margin-top: 0;
   font-size: 3.375rem;
-}
+} */
 
 h2,
 h3,
@@ -402,7 +405,9 @@ h6 {
   color: #c8a47e;
 }
 
-h2 {
+/* this is the proper heading scale, but I want to make it consistent with my other site so I'm using their weird choices for now  */
+
+/* h2 {
   font-size: 2.25rem;
 }
 
@@ -418,11 +423,7 @@ h4 {
 h5 {
   font-size: 1rem;
   font-weight: 500;
-}
-
-button:focus {
-  outline: 2px solid black;
-}
+} */
 
 small {
   font-size: 0.667rem;
@@ -444,7 +445,11 @@ footer a {
   font-size: 1.275rem;
 }
 
-h4,
+h4 {
+  font-size: 1.544rem;
+  font-weight: 400;
+}
+
 h5,
 h6 {
   font-size: 1rem;
@@ -466,7 +471,7 @@ a:active {
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: currentColor;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 2px;
   text-underline-offset: 0.2 em;
 }
 
@@ -476,25 +481,15 @@ a:focus {
   outline-offset: 4px;
 }
 
-/* Button */
+/* List */
 
-.button,
-.button:visited {
-  text-decoration: none;
-  border-bottom: none;
-  color: white;
-  background-color: black;
-  padding: 0.5em;
+ul {
+  color: #c8a47e;
 }
 
-.button:hover,
-.button:active,
-.button:focus {
-  text-decoration: none;
-  border-bottom: none;
-  color: black;
-  background-color: white;
-  padding: 0.5rem;
+footer ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Layout */
@@ -531,5 +526,10 @@ footer {
   }
   main p {
     max-width: 30rem;
+  }
+  .project-item {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr;
   }
 }
