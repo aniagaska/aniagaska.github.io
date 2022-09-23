@@ -358,17 +358,12 @@ html {
 }
 
 body {
-  /* font-family: "Poppins", Helvetica, Arial, sans-serif; */
   font-family: Georgia, serif;
-  font-weight: 500;
   font-style: normal;
-  letter-spacing: 0em;
   text-transform: none;
-  line-height: 1.5;
   font-size: 16px;
   background-color: white;
   color: black;
-  font-weight: 400;
   line-height: 1.25;
 }
 
@@ -382,83 +377,48 @@ body {
 
 p {
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 400;
-  line-height: 1.5em;
-}
-
-/* h1 {
+h1 {
   margin-top: 0;
-  font-size: 3.375rem;
-} */
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: lightslategray;
+  font-size: 1.383rem;
+  line-height: 1;
+  color: cornflowerblue;
 }
 
-/* this is the proper heading scale, but I want to make it consistent with my other site so I'm using their weird choices for now  */
+.hello {
+  font-size: 1.383rem;
+  color: cornflowerblue;
+  font-weight: bold;
+}
 
-/* h2 {
-  font-size: 2.25rem;
+h2 {
+  font-size: 1.296rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.215rem;
 }
 
 h4 {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.138rem;
 }
 
 h5 {
-  font-size: 1rem;
-  font-weight: 500;
-} */
+  font-size: 1.067rem;
+}
 
 small {
-  font-size: 0.667rem;
+  font-size: 0.937rem;
 }
 
 ul li {
   line-height: 1.75;
 }
 
-/* I'm not sure if it's cool for me to do this or if I should make them classes */
-
-h1 {
-  line-height: 1;
-}
-
-h1,
-h2,
-h3 {
-  font-size: 2rem;
-}
-
 footer a {
-  font-size: 1.275rem;
-}
-
-h4 {
-  font-size: 1.544rem;
-  font-weight: 400;
-}
-
-h5,
-h6 {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.067rem;
 }
 
 /* Links */
@@ -467,25 +427,19 @@ a,
 a:visited,
 a:hover,
 a:active {
-  color: lightslategray;
+  color: #26428b;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: currentColor;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.2 em;
 }
 
 a:focus {
   text-decoration: none;
-  outline: 2px solid black;
+  outline: 2px solid cornflowerblue;
   outline-offset: 4px;
 }
 
 /* List */
-
-ul {
-  color: lightslategray;
-}
 
 footer ul {
   list-style: none;
@@ -504,15 +458,13 @@ body {
 }
 
 .hello {
-  font-size: 2rem;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  color: deepskyblue;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 40em) {
@@ -521,21 +473,11 @@ footer {
     grid-template-rows: auto 1fr auto;
   }
   main {
-    /* padding-left: 6rem; */
     margin: 0 auto;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
   main p {
     max-width: 30rem;
-  }
-  .project-item {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #about {
-    padding-top: 3em;
   }
 }
